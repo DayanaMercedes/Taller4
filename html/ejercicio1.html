@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario #1</title>
+</head>
+<style>
+    h1 {color: orange;}
+    
+</style>
+<h1>Land Of Boxes Order Form</h1>
+
+<body style="width: 100%;height: 100%;">
+    
+    <form action="" style="margin: 10px;">
+
+        Name:
+        <input type="text" autofocus placeholder="Walaa Brody"><br>
+        <br>
+
+        Email:
+        <input type="email" placeholder="w.brody@widget-sales.com" maxlength="30"><br>
+        <br>
+        <table>
+        <td style="padding-left: 0dvi;padding-right: 0dvi;" align="center">Address:</td>
+    <td><textarea name="" id="" cols="15" rows="5">162 Main Road Rondebosch        Cape Town</textarea></td>
+</table>
+    <br>
+
+    Postcode:
+    <input type="number" name="" id="">
+    <br>
+    </form>
+
+    <table  border="2">
+
+        <th>Product</th>
+        <th>Part Number</th>
+        <th>Quantiy</th>
+        <th>Unit Price</th> 
+        <th>Subtotal</th>    
+        <tr>
+            <td>Econobox</td>
+            <td>LB100</td>
+            <td><input type="number" name="" id=""></td>
+            <td>R5</td>
+        <td><input type="text" name="R" pattern="^R\d{100}"></td>
+        </tr>
+        <tr>
+            <td>Standard Box</td>
+            <td>LB200</td>
+            <td><input type="number" name="3" id=""></td>
+            <td>R10</td>
+            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+        </tr>
+        <tr>
+            <td>Premium Box/TD></td>
+            <td>LB300</td>
+            <td><input type="number" name="3" id=""></td>
+            <td>R15</td>
+            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+        </tr>
+        <td>Deluxe Box/TD></td>
+            <td>LB400</td>
+            <td><input type="number" name="3" id=""></td>
+            <td>R20</td>
+            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+        </tr>    
+        <td>Super Deluxe Box/TD></td>
+            <td>LB500</td>
+            <td><input type="number" name="3" id=""></td>
+            <td>R30</td>
+            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;" colspan="4">Total</td>
+            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+
+        </tr>
+    </table>
+    <br>
+    <br>
+<table> <td>
+    <strong>Credit Card  Details</strong><br>
+    Card Type: <br>
+    <input type="radio" name="Mastercard" id="">Martercard                 
+    <br>
+    <input type="radio" name="Visa" id="">Visa  
+    <br>
+    <input type="radio" name="American Express" id="">American Express
+    <br>
+    <input type="radio" name="Diners Club" id="">Diners Club
+</td>
+    <td>
+        Card Number
+        <input type="number" name="Card Number" id=""><br>
+        <br>
+        Expiry date
+        <input type="date" placeholder="number" pattern="(dd/yy)"></td>
+</table>
+    <br>
+<table>
+    <td style="padding-left: 0dvi;padding-right: 0dvi;" align="center"><strong> Delivery Address:</strong></td><br>
+    <td><textarea name="" id="" cols="15" rows="5">162 Main Road Rondebosch        Cape Town</textarea></td>
+</table>
+<br>
+
+<input type="submit" value="Send Order"> 
+<input type="button" value="Clear Form">
+
+
+
+</body>
+</html>
