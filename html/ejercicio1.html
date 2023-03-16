@@ -30,9 +30,9 @@
     <br>
 
     Postcode:
-    <input type="number" name="" id="">
-    <br>
-    </form>
+    <input type="text" pattern="[0-9]{6,8}">
+    <br><br>
+    
 
     <table  border="2">
 
@@ -44,39 +44,39 @@
         <tr>
             <td>Econobox</td>
             <td>LB100</td>
-            <td><input type="number" name="" id=""></td>
+            <td><input type="text" maxlength="3" ></td>
             <td>R5</td>
-        <td><input type="text" name="R" pattern="^R\d{100}"></td>
+        <td><input type="text" pattern="^R\d{0,100}"></td>
         </tr>
         <tr>
             <td>Standard Box</td>
             <td>LB200</td>
-            <td><input type="number" name="3" id=""></td>
+            <td><input type="text" maxlength="3" ></td>
             <td>R10</td>
-            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+            <td><input type="text" pattern=" ^R\d{0,100}"></td>
         </tr>
         <tr>
             <td>Premium Box/TD></td>
             <td>LB300</td>
-            <td><input type="number" name="3" id=""></td>
+            <td><input type="text" maxlength="3" id=""></td>
             <td>R15</td>
-            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+            <td><input type="text" name="R" pattern=" ^R\d{0,100}"></td>
         </tr>
         <td>Deluxe Box/TD></td>
             <td>LB400</td>
-            <td><input type="number" name="3" id=""></td>
+            <td><input type="text" maxlength="3"></td>
             <td>R20</td>
-            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+            <td><input type="text" name="R" pattern=" ^R\d{0,100}"></td>
         </tr>    
         <td>Super Deluxe Box/TD></td>
             <td>LB500</td>
-            <td><input type="number" name="3" id=""></td>
+            <td><input type="text" maxlength="3"></td>
             <td>R30</td>
-            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+            <td><input type="text" name="R" pattern=" ^R\d{0,100}"></td>
         </tr>
         <tr>
             <td style="text-align: right;" colspan="4">Total</td>
-            <td><input type="text" name="R" pattern=" [^R\d{100}]"></td>
+            <td><input type="text" name="R" pattern=" ^R\d{0,100}"></td>
 
         </tr>
     </table>
@@ -85,20 +85,20 @@
 <table> <td>
     <strong>Credit Card  Details</strong><br>
     Card Type: <br>
-    <input type="radio" name="Mastercard" id="">Martercard                 
+    <input type="radio" name="credit" id="">Martercard                 
     <br>
-    <input type="radio" name="Visa" id="">Visa  
+    <input type="radio" name="credit" id="">Visa  
     <br>
-    <input type="radio" name="American Express" id="">American Express
+    <input type="radio" name="credit" id="">American Express
     <br>
-    <input type="radio" name="Diners Club" id="">Diners Club
+    <input type="radio" name="credit" id="">Diners Club
 </td>
     <td>
         Card Number
         <input type="number" name="Card Number" id=""><br>
         <br>
         Expiry date
-        <input type="date" placeholder="number" pattern="(dd/yy)"></td>
+        <input type="text" pattern="(0[1-9]|1[0-2])\/?([0-9]{2})$"></td>
 </table>
     <br>
 <table>
@@ -110,7 +110,7 @@
 <input type="submit" value="Send Order"> 
 <input type="button" value="Clear Form">
 
-
+</form>
 
 </body>
 </html>

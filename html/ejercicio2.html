@@ -20,18 +20,21 @@
         </select> <br>
         <br>
 
-        First name: <input type="text" name="" id=""><br>
+        First name: <input type="text" pattern="^(Mr|Ms|Mrs) [a-zA-Z]+ [a-zA-Z]+$"><br>
         <br>
-        Last name: <input type="text" name="" id=""><br>
+        Last name: <input type="text" pattern="^(Mr|Ms|Mrs) [a-zA-Z]+ [a-zA-Z]+$"><br>
         <br>
 
         Gender: <input type="radio" name="Male" id="Male">Male <input type="radio" name="Female" id="Female">Female<br>
         <br>
-        Email: <input type="email" name="" id="@cecar.edu.co" value="@cecar.edu.co">
+        Email: <input type="email" pattern="^[a-zA-Z0-9._%+-]+@cecar\.edu\.co$" >
+       <br> <br>  Date of Birth: <input type="date" name="date" id=""> <br>
+<br>
+        Address: <br>   
+        <textarea maxlength="100" cols="27" rows="4"></textarea>
+        <br>
 
-        Date of Birth: <input type="date" name="date" id="">
-
-        Address:
+        <button>Submit</button>
 
 
     </fieldset>
